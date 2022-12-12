@@ -1,13 +1,15 @@
 <script>
-const first_name ="Abhishek";
-const last_name ="pandey";
+const first_name ="<b>Abhishek</b>";
+const last_name ="<b>pandey</b>";
+const hack = `<a href="#" onclick="alert('You have been hacked!')">Win a prize!</a>`
 </script>
 
 
 <main>
 <h1>Hello world</h1>
 <div>Channel</div>
-<div>{first_name} {last_name}</div>
+<div>{ @html first_name}{last_name}</div>
+<div>{@html hack}</div>
 </main>
 
 
